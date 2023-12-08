@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guia Sobre HTML</title>
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/main.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Guia de Estudos sobre HTML</h1>
-      <hr>
 
-      <div id="guia-navecacao">
+    <div class="container">
+
+      <div class="conteudo" id="cabecalho">
+        <h1>Guia de Estudos sobre HTML</h1>
+      </div>
+
+      <div class="conteudo">
         <h2>Guia de Navegação</h2>
-        <ul>
+        <ul id="guia-navegacao">
           <li><a href="#utilidade">Qual a utilizade da programação ?</a></li>
+          <li><a href="#alto_baixo">Linguagem de Alto de Baixo Nível</a></li>
           <li><a href="#cliente_servidor">Entendendo sobre Cliente X Servidor</a></li>
           <li><a href="#sobre">HTLM e algumas Tags</a></li>
           <li><a href="#referencias">Referências</a></li>
@@ -30,11 +36,24 @@
           Programação consiste em pegarmos um problema ou necessidade do mundo
           real e através de algoritmos (sequência de instruções lógicas)
           criarmos uma solução. Na qual essa solução será transcrita para uma
-          linguagem de computação, que consiste em uma forma de instruções
+          <span>linguagem de computação</span>, que consiste em uma forma de instruções
           específicas capaz de se comunicar com o computador, na qual o mesmo
           será responsável por armazenar informações, tratar e tomaras decisões
           de acordo com as diversas circunstâncias.
         </p>
+        <hr>
+      </div>
+
+      <div class="conteudo">
+        <h2 id="alto_baixo">Qual a diferença entre linguagem de baixo e alto nível</h2>
+        <p>Entendermos a diferença entra a linguagem de alto e baixo nível é extremamente importante e 
+          para evoluirmos na programação, começando com a linguagem de <span>Baixo Nível</span> ela é aquela linguagem
+          que de difícil leitura que se baseia em 0 e 1, sendo uma linguagem própria para computadores e foge muito 
+          da linguagem humana, já a linguagem de <span>Alto nível</span> é a linguagem mais dos humanas
+          sendo considera mais amigável e de fácil compreensão. O processo ao programarmos em uma linguagem de alto Nível
+          será convertido para uma linguagem da qual o computador possa interpretar e executar aquela determinada instrução
+        </p>
+        <hr>
       </div>
 
       <div class="conteudo">
@@ -52,6 +71,7 @@
           palavras podemos dizer que o back end é o que acontece debaixo dos
           panos.
         </p>
+        <hr>
       </div>
 
       <div class="conteudo">
@@ -83,12 +103,35 @@
           do HTML 5 é carregada pelo DOCTYPE HTML.
           <div class="semanticas">
             <h3>HTML Semântico </h3>
+            <p>
+              Conforme já dito anteriormente o HTML 5 veio para trazer mais sentidos a tags e auxiliar em questão de acessibilidade, para fins de conhecimentos iremos destacar algumas das tags semânticas utilizadas no HTML 5 e quais suas funções:
+            </p>
+            <br>
+            <ul>
+              <li><span>NAV</span> - Seção de páginas que levam a outras páginas ou áreas</li>
+              <br>
+              <li><span>HEADER</span> - Elementos de um cabeçalho</li>
+              <br>
+              <li><span>SECTION</span> - Seção genérica de conteúdo</li>
+              <br>
+              <li><span>ASIDE</span> - Seção de conteúdo relacionado ao seu entorno </li>
+              <br>
+              <li><span>MAIN</span> - Conteúdo principal dentro do body</li>
+              <br>
+              <li><span>FOOTER</span> - Representa um rodapé</li>
+            </ul>
           </div>
         </p>
+        <hr>
       </div>
 
       <div class="conteudo">
         <h2 id="referencias">Referências</h2>
+        <ul id="rodape">
+          <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">SOBRE O HTML </a></li>
+          <li><a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">O BÁSICO </a></li>
+          <li><a href="https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics" target="_blank">HTML SEMÂNTICO</a></li>
+        </ul>
       </div>
     </div>
   </body>
